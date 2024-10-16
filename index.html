@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogue des Monstres</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Catalogue des Monstres</h1>
+    </header>
+
+    <main>
+        <div class="filter-section">
+            <h2>Filtrer par Caractéristiques</h2>
+            <form id="filter-form">
+                <label>
+                    <input type="checkbox" name="caracteristique" value="Températures élevées">
+                    Températures élevées
+                </label>
+                <label>
+                    <input type="checkbox" name="caracteristique" value="Incendies spontanés">
+                    Incendies spontanés
+                </label>
+                <label>
+                    <input type="checkbox" name="caracteristique" value="EMF Niveau 5">
+                    EMF Niveau 5
+                </label>
+                <label>
+                    <input type="checkbox" name="caracteristique" value="Apparitions soudaines">
+                    Apparitions soudaines
+                </label>
+                <label>
+                    <input type="checkbox" name="caracteristique" value="Écriture fantomatique">
+                    Écriture fantomatique
+                </label>
+                <label>
+                    <input type="checkbox" name="caracteristique" value="Bruits d'os craquant">
+                    Bruits d'os craquant
+                </label>
+                <label>
+                    <input type="checkbox" name="caracteristique" value="Hurlements terrifiants">
+                    Hurlements terrifiants
+                </label>
+                <label>
+                    <input type="checkbox" name="caracteristique" value="Radio">
+                    Parle dans la radio
+                </label>
+            </form>
+            <button id="apply-filters">Appliquer les Filtres</button>
+        </div>
+
+        <div class="catalogue">
+            <ul id="monstre-list">
+                <!-- Les monstres seront ajoutés ici dynamiquement via JS -->
+            </ul>
+
+            <div class="details" id="details">
+                <h2>Informations sur le Monstre</h2>
+                <p>Sélectionnez un monstre pour voir les détails.</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
