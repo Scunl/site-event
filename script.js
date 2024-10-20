@@ -6,7 +6,8 @@ const monstres = [
         caracteristiques: [
             "Températures élevées",
             "Hurlements terrifiants",
-            "Incendies spontanés"
+            "Incendies spontanés",
+            "Écriture fantomatique"
         ],
         faiblesse: "Vulnérable à l'eau bénite. Et n'aime pas les regroupements d'invidividus"
     },
