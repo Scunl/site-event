@@ -8,7 +8,7 @@ const monstres = [
             "Hurlements terrifiants",
             "Incendies spontanés"
         ],
-        faiblesse: "Vulnérable à l'eau bénite."
+        faiblesse: "Vulnérable à l'eau bénite. Et n'aime pas les regroupements d'invidividus"
     },
     {
         nom: "Spectre Gélifié",
@@ -79,6 +79,26 @@ const monstres = [
             "EMF Niveau 5"
         ],
         faiblesse: "Peut être exorcisé avec des flammes."
+    },
+    {
+        nom: "Solarius",
+        description: "Un esprit incandescent, entouré d'une chaleur si intense qu'il fait fondre les objets à proximité. Il brûle tout ce qui croise son chemin, augmentant rapidement la température autour de lui.",
+        caracteristiques: [
+            "Températures élevées",
+            "Incendies spontanés",
+            "EMF Niveau 5"
+        ],
+        faiblesse: "Affaibli par l'obscurité totale."
+    },
+    {
+        nom: "Infernos",
+        description: "Une entité malveillante qui déclenche des vagues de chaleur dévastatrices. Il sème la terreur avec sa présence ardente et envoie des flammes infernales qui ravagent tout sur son passage.",
+        caracteristiques: [
+            "Températures élevées",
+            "Hurlements terrifiants",
+            "Parle dans la radio"
+        ],
+        faiblesse: "Vulnérable aux artefacts glacés."
     }
 ];
 
