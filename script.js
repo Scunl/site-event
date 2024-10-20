@@ -1,40 +1,87 @@
 // Liste des monstres
 const monstres = [
     {
-        nom: "Ignispectre",
-        description: "Un esprit vengeur entouré de flammes éternelles, qui provoque des incendies spontanés.",
-        lieu: "Villa en feu dans Vinewood Hills.",
+        nom: "Flamme Nocturne",
+        description: "Ce spectre embrase son environnement, provoquant une chaleur insupportable et des incendies soudains. Ses cris déchirants résonnent dans l'obscurité, effrayant quiconque l'entend.",
+        caracteristiques: [
+            "Températures élevées",
+            "Hurlements terrifiants",
+            "Incendies spontanés"
+        ],
+        faiblesse: "Vulnérable à l'eau bénite."
+    },
+    {
+        nom: "Spectre Gélifié",
+        description: "Contrairement à ses homologues ardents, ce spectre est associé au froid extrême, provoquant une baisse drastique des températures. Il apparaît subitement et sème la confusion par des messages radio cryptiques.",
+        caracteristiques: [
+            "Températures extrêmement basses",
+            "Apparitions soudaines",
+            "Parle dans la radio"
+        ],
+        faiblesse: "Vulnérable au feu sacré."
+    },
+    {
+        nom: "Pyrocallis",
+        description: "Un esprit qui adore jouer avec le feu. Il déclenche des incendies tout en envoyant des signaux perturbants dans les radios, et chaque fois qu'il est proche, les appareils EMF réagissent violemment.",
+        caracteristiques: [
+            "Incendies spontanés",
+            "EMF Niveau 5",
+            "Parle dans la radio"
+        ],
+        faiblesse: "Peut être exorcisé avec du soufre."
+    },
+    {
+        nom: "L'Embrasé",
+        description: "Cet esprit est une véritable bombe incendiaire, capable de déclencher des incendies là où il passe. Il aime terroriser ses victimes en chuchotant des menaces via la radio, avant de libérer des hurlements terrifiants qui glacent le sang.",
+        caracteristiques: [
+            "Incendies spontanés",
+            "Parle dans la radio",
+            "Hurlements terrifiants"
+        ],
+        faiblesse: "Affaibli par le froid extrême."
+    },
+    {
+        nom: "Craniomancer",
+        description: "Ce spectre est obsédé par les os. Il se manifeste avec des bruits dérangeants de craquement d'os et peut apparaître soudainement, créant un pic dans les relevés EMF. Il laisse des ossements derrière lui lorsqu'il se déplace.",
+        caracteristiques: [
+            "Bruits d'os craquant",
+            "EMF Niveau 5",
+            "Apparitions soudaines"
+        ],
+        faiblesse: "Vulnérable aux objets en métal pur."
+    },
+    {
+        nom: "Ignimortis",
+        description: "Un esprit lié à la chaleur intense, qui provoque des flammes spontanées autour de lui et fait grimper la température de manière anormale. Il émet des cris stridents lorsqu'il est en colère, rendant toute interaction terrifiante.",
         caracteristiques: [
             "Températures élevées",
             "Incendies spontanés",
-            "EMF Niveau 5"
-        ],
-        faiblesse: "Vulnérable à l'eau."
-    },
-    {
-        nom: "Osferatu",
-        description: "Un fantôme squelettique qui hante une vieille demeure abandonnée. Il laisse des empreintes d'os et manipule des objets.",
-        lieu: "Manoir abandonné à Paleto Bay.",
-        caracteristiques: [
-            "Apparitions soudaines",
-            "Empreintes osseuses",
-            "Bruits d'os craquant",
             "Hurlements terrifiants"
         ],
-        faiblesse: "Effrayé par les objets religieux."
+        faiblesse: "Se calme avec des rituels de purification."
     },
     {
-        nom: "Lycanghast",
-        description: "Un loup-garou spectral qui hante les montagnes de Blaine County. Il est rapide et chasse silencieusement ses proies.",
-        lieu: "Villa en ruines dans les montagnes.",
+        nom: "Glacéris",
+        description: "Un esprit ancien qui enveloppe tout ce qu'il touche dans une couche de glace. Il abaisse drastiquement la température, créant des tempêtes de glace locales dans son sillage.",
         caracteristiques: [
-            "Hurlements terrifiants",
-            "Vitesse accrue en chasse",
-            "Traces de griffes"
+            "Températures extrêmement basses",
+            "Apparitions soudaines",
+            "Hurlements terrifiants"
         ],
-        faiblesse: "Vulnérable aux armes en argent."
+        faiblesse: "Vulnérable à la chaleur intense."
+    },
+    {
+        nom: "Cryomancien",
+        description: "Cet esprit manipulateur du froid est capable de geler instantanément l'air autour de lui. Il communique via des fréquences radios et fait chuter les températures à des niveaux insupportables.",
+        caracteristiques: [
+            "Températures extrêmement basses",
+            "Parle dans la radio",
+            "EMF Niveau 5"
+        ],
+        faiblesse: "Peut être exorcisé avec des flammes."
     }
 ];
+
 
 // Sélectionner la liste et le détail du monstre
 const monstreList = document.getElementById('monstre-list');
