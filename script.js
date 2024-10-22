@@ -43,13 +43,13 @@ const monstres = [
     },
     {
         nom: "Craniomancer",
-        description: "Ce spectre est obsédé par les os. Il se manifeste avec des bruits dérangeants de craquement d'os et peut apparaître soudainement, créant un pic dans les relevés EMF. Il laisse des ossements derrière lui lorsqu'il se déplace.",
+        description: "Ce spectre est obsédé par les os. Il se manifeste avec des bruits dérangeants de craquement d'os et peut apparaître soudainement, créant un pic dans les relevés EMF. Il laisse des ossements derrière lui lorsqu'il se déplace. Il attaque seulement les enquêteurs lorsqu'ils se trouvent seul",
         caracteristiques: [
             "Bruits d'os craquant",
             "EMF Niveau 5",
             "Apparitions soudaines"
         ],
-        faiblesse: "Vulnérable aux objets en métal pur."
+        faiblesse: "Vulnérable aux objets en métal."
     },
     {
         nom: "Ignimortis",
@@ -77,7 +77,8 @@ const monstres = [
         caracteristiques: [
             "Températures extrêmement basses",
             "Parle dans la radio",
-            "EMF Niveau 5"
+            "EMF Niveau 5",
+            "Apparitions soudaines"
         ],
         faiblesse: "Peut être exorcisé avec des flammes."
     },
@@ -87,7 +88,8 @@ const monstres = [
         caracteristiques: [
             "Températures élevées",
             "Incendies spontanés",
-            "EMF Niveau 5"
+            "EMF Niveau 5",
+            "Apparitions soudaines"
         ],
         faiblesse: "Affaibli par l'obscurité totale."
     },
