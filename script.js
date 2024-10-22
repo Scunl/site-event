@@ -49,7 +49,7 @@ const monstres = [
             "EMF Niveau 5",
             "Apparitions soudaines"
         ],
-        faiblesse: "Vulnérable aux objets en métal."
+        faiblesse: "Pour calmer le monstre, il faut effectuer un rituel autour du pentacle rouge."
     },
     {
         nom: "Ignimortis",
