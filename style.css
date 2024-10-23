@@ -10,10 +10,11 @@ body {
     color: #ffffff;
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* aligner au début pour laisser place au défilement */
-    min-height: 100vh; /* s'assurer que la page utilise au moins la hauteur complète */
+    align-items: flex-start;
+    min-height: 100vh;
     flex-direction: column;
     padding: 10px;
+    font-size: 14px; /* Réduction de la taille de la police par défaut */
 }
 
 header {
@@ -23,11 +24,12 @@ header {
 
 h1 {
     color: #ffcc00;
+    font-size: 24px; /* Réduire légèrement le titre */
 }
 
 .filter-section {
     background-color: #222;
-    padding: 20px;
+    padding: 15px; /* Réduire légèrement le padding */
     border-radius: 5px;
     margin-bottom: 20px;
     width: 100%;
@@ -35,18 +37,19 @@ h1 {
     position: sticky;
     top: 0;
     z-index: 100;
-    overflow-y: auto; /* Si le contenu devient trop long, ajouter une barre de défilement */
-    max-height: 50vh; /* Limiter la hauteur pour ne pas cacher le reste de la page */
+    overflow-y: auto;
+    max-height: 50vh;
 }
 
 label {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 8px; /* Espacement réduit */
+    font-size: 14px; /* Taille de police plus petite pour les labels */
 }
 
 button {
     margin-top: 10px;
-    padding: 10px 20px;
+    padding: 8px 16px; /* Réduction de la taille du bouton */
     background-color: #ffcc00;
     border: none;
     color: #000;
@@ -65,7 +68,7 @@ button:hover {
     justify-content: space-between;
     width: 100%;
     max-width: 600px;
-    margin-bottom: 20px; /* S'assurer qu'il y a de l'espace en bas pour le défilement */
+    margin-bottom: 20px;
 }
 
 ul {
@@ -75,8 +78,8 @@ ul {
 
 li {
     background-color: #333333;
-    padding: 15px;
-    margin: 10px 0;
+    padding: 12px; /* Réduction du padding */
+    margin: 8px 0; /* Réduction de l'espacement */
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -90,37 +93,45 @@ li:hover {
 .details {
     width: 100%;
     background-color: #222;
-    padding: 20px;
+    padding: 15px; /* Réduire légèrement le padding */
     border-radius: 5px;
     margin-top: 20px;
 }
 
 .details h2 {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    font-size: 18px; /* Réduire la taille du titre dans les détails */
 }
 
 .details p {
-    line-height: 1.5;
-    margin-bottom: 10px;
+    line-height: 1.4;
+    font-size: 14px; /* Réduire la taille du texte dans les détails */
 }
 
 /* Styles pour les petits écrans (ex : téléphones) */
 @media (max-width: 768px) {
     body {
-        padding: 10px;
+        font-size: 12px; /* Réduction de la taille de la police sur petits écrans */
     }
 
-    .catalogue {
-        flex-direction: column;
-        align-items: center;
+    h1 {
+        font-size: 20px; /* Réduire le titre principal sur téléphone */
     }
 
-    .details {
-        margin-top: 20px;
+    label {
+        font-size: 12px; /* Réduction de la taille des labels */
     }
 
     button {
-        font-size: 16px;
-        padding: 10px;
+        font-size: 14px; /* Réduction de la taille du texte des boutons */
+        padding: 8px;
+    }
+
+    .details h2 {
+        font-size: 16px; /* Réduction de la taille du titre dans les détails */
+    }
+
+    .details p {
+        font-size: 12px; /* Réduction de la taille du texte des détails */
     }
 }

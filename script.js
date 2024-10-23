@@ -47,7 +47,8 @@ const monstres = [
         caracteristiques: [
             "Bruits d'os craquant",
             "EMF Niveau 5",
-            "Apparitions soudaines"
+            "Apparitions soudaines",
+            "Parle dans la radio"
         ],
         faiblesse: "Pour calmer le monstre, il faut effectuer un rituel autour du pentacle rouge."
     },
@@ -57,7 +58,8 @@ const monstres = [
         caracteristiques: [
             "Températures élevées",
             "Incendies spontanés",
-            "Hurlements terrifiants"
+            "Hurlements terrifiants",
+            "Parle dans la radio"
         ],
         faiblesse: "Se calme avec des rituels de purification."
     },
@@ -135,7 +137,6 @@ function afficherDetails(index, monstresFiltrés) {
     detailsDiv.innerHTML = `
         <h2>${monstre.nom}</h2>
         <p><strong>Description :</strong> ${monstre.description}</p>
-        <p><strong>Lieu :</strong> ${monstre.lieu}</p>
         <p><strong>Caractéristiques :</strong></p>
         <ul>
             ${monstre.caracteristiques.map(carac => `<li>${carac}</li>`).join('')}
